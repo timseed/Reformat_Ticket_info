@@ -2,7 +2,10 @@ import pprint
 import pickle
 codes=[]
 
-ifp=open('junk','r')
+#Quick hack to get the airport codes from the NET into a Python Pickle Object
+
+#wget http://www.nationsonline.org/oneworld/IATA_Codes/airport_code_list.htm 
+ifp=open('airport_code_list.htm','r')
 for line in ifp:
     fld=line.split('\t')
     if len(fld)==3:
